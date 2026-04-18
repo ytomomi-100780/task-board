@@ -9,15 +9,34 @@
 
 ## 技術スタック
 
-（プロジェクト初期化後に更新してください）
+- **フレームワーク**: React 18
+- **ビルドツール**: Vite 5
+- **言語**: JavaScript (JSX)
+- **スタイル**: CSS
 
 ## ディレクトリ構成
 
-（プロジェクト初期化後に更新してください）
+```
+task-board/
+├── src/
+│   ├── App.jsx       # メインコンポーネント
+│   ├── App.css       # スタイル
+│   ├── main.jsx      # エントリーポイント
+│   └── index.css     # グローバルスタイル
+├── public/
+├── index.html
+├── vite.config.js
+└── package.json
+```
 
 ## 開発コマンド
 
-（プロジェクト初期化後に更新してください）
+```bash
+npm install      # 依存関係インストール
+npm run dev      # 開発サーバー起動 (http://localhost:5173)
+npm run build    # 本番ビルド
+npm run preview  # ビルド結果のプレビュー
+```
 
 ---
 
