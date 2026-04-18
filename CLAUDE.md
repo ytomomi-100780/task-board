@@ -12,7 +12,27 @@
 - **フレームワーク**: React 18
 - **ビルドツール**: Vite 5
 - **言語**: JavaScript (JSX)
-- **スタイル**: CSS
+- **スタイル**: CSS（コンポーネントごとに `App.css` で管理）
+- **状態管理**: React `useState`（外部ライブラリなし）
+- **永続化**: `localStorage`
+- **デプロイ**: GitHub Pages（GitHub Actions による自動デプロイ）
+
+## デプロイ先
+
+https://ytomomi-100780.github.io/task-board/
+
+`main` ブランチへのプッシュで自動ビルド・デプロイされる。
+
+## コンポーネント命名規約
+
+| 種別 | 規約 | 例 |
+|---|---|---|
+| コンポーネントファイル | PascalCase + `.jsx` | `TaskItem.jsx` |
+| コンポーネント関数 | PascalCase | `function TaskItem()` |
+| CSS クラス名 | kebab-case | `.task-list`, `.input-row` |
+| イベントハンドラ | `handle` + 動詞 | `handleKeyDown`, `handleSubmit` |
+| state 変数 | camelCase | `tasks`, `input` |
+| state セッタ経由の保存関数 | `save` + 名詞 | `saveTasks` |
 
 ## ディレクトリ構成
 
